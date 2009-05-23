@@ -186,3 +186,9 @@ a:hover {
 h2 .free {
     margin-left: 1em;
 }
+
+caption {
+		font-size: 1.4em;
+		padding: 5px;
+		font-weight: bold;
+}
