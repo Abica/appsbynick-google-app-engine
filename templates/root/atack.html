@@ -1,0 +1,81 @@
+{% extends "../layouts/base_generic.html" %}
+
+
+{% block js %}
+  <!-- needed scripts for cocosLive widget -->
+  <script type="text/javascript" src="/javascripts/cocoslive_widget.js"></script>
+  <script type="text/javascript" src="/javascripts/json2.js"></script>
+	<script>
+		var options = {
+			/* this array must be a subset of the columns that are "send to iPhone"  */
+			/* cc_pos is a virtual column. It doesn't exist in cocoslive, but it is simulated in the widget */
+			'columns' : [ 'cc_pos', 'cc_score', 'cc_country', 'cc_playername', 'usr_multiplier'],
+
+			/* Name of the columns. Display it in your onw language */
+			'columnsNames' : ['Pos', 'Score','Country', 'Player Name', 'Multiplier'],
+
+			/* 0 = All scores, 1 = Scores by Country */
+			'flags' : 0,
+
+			/* how many scores must be displayed per page ? */
+			'limit' : 10,
+
+			/* starting from what score. leave it in 0 */
+			'offset' : 0,
+
+			/* What's the default category ? */
+			'category' : '',
+
+			/* Game Name, as it is in CocosLive */
+			'gameName' : "aTack",
+
+			/* Title of the table. If title='' then the title won't be displayed */
+			'title' : 'aTack High Scores', // this is optional
+
+			/* if the game has categories, put the categories here */
+			/* these categories MUST match with the same that are registered in cocosLive */
+			/* If you don't want categories, set it as an empty array */
+			// var categories = [];
+			'categories' : []
+		};
+
+
+		/* when the DOM is ready, an AJAX request will be made */
+		$(document).ready( function(){
+			cocosLiveRequestScores( "atack-scores", options);
+		});
+</script>
+
+
+{% endblock %}
+
+{% block css %}
+  <!-- needed scripts for cocosLive widget -->
+  <link rel="stylesheet" type="text/css" href="http://www.cocoslive.net/static/css/cl_widget.css" />
+{% endblock %}
+  
+
+{% block content %}
+  <h2 id="atack">aTack</h2>
+  <img src="/images/atack.png" class="screenshot" alt="aTack Screenshot" />
+  <p class="c">
+		Ever had one of those awesome dreams where you're a tack and you get to pop bubbles? No? Sure about that? Well.. I have. I even made a game about it.
+  </p>
+
+  <p class="c">
+  	aTack combines a simple, intuitive interface with competitive, edge of your seat gameplay. Extremely addictive and complete with world wide, web based high scores, you're well positioned to teach the other iPhone gamers not to mess with your mastery of falling object games.
+  </p>
+
+  <p class="c">
+		Popping bubbles before they leave the screen makes attaining massive score multipliers both difficult and enjoyable. Try your hand at aTack today!
+  </p>
+
+  <p class="c" style="clear: both">
+  <br />
+  <a href="http://phobos.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=304807054&mt=8">Purchase aTack from App Store</a> for only <strong>$1.99</strong>
+  </p>
+
+
+  <div id="atack-scores"></div>
+
+{% endblock %}

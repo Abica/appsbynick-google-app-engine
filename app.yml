@@ -1,0 +1,17 @@
+application: appsbynick
+version: 1
+runtime: python
+api_version: 1
+
+handlers:
+- url: /images
+  static_dir: assets/images
+
+- url: /stylesheets
+  static_dir: assets/stylesheets
+
+- url: /javascripts
+  static_dir: assets/javascripts
+  
+- url: /.*
+  script: main.py

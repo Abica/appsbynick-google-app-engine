@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <link rel="stylesheet" href="/stylesheets/base.css" />
+  {% block css %}{% endblock %}
+
+  <script type="text/javascript" src="/javascripts/jquery.min.js"></script>
+  {% block js %}{% endblock %}
+  <title>{% block title %}Apps By Nick{% endblock %}</title>
+</head>
+<body>
+
+<div id="outer-wrapper">
+  <div id="header">
+    <div id="logo">
+
+      <h1><a href="/">Apps By Nick</a></h1>
+    </div>
+
+    <div id="nav">
+      <ul>
+        <li class="first"><a id="a-atack" href="/atack">aTack</a></li>
+        <li class="first"><a id="a-clax" href="/clax">Clax</a></li>
+        <li><a id="a-bcdclock" href="/bcdclock">BCD Clock</a></li>
+        <li><a class="support-first" href="/support">Email Support</a></li>
+
+        <li><a href="/support#feedback">Send Feedback</a></li>
+      </ul>
+    </div>
+    <br class="clear" />
+  </div>
+
+  <div id="main">
+    <div id="inner-wrapper">
+      <div id="content">
+				{% block content %}{% endblock %}
+      </div>
+    </div>
+  </div>
+
+  <div id="footer">
+    &#8220;Nick&#8221; is <a href="http://nicholaswright.org/">Nicholas Wright</a>. &copy; 2009
+  </div>
+</div>
+
+</body>
+</html>

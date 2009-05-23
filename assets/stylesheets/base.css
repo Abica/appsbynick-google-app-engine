@@ -1,0 +1,188 @@
+html {
+    min-height: 100%;
+}
+
+body {
+    padding: 1.5em;
+    margin: 0;
+    background: #FFFFEE;
+    text-align: center;
+    font-family: Verdana, Helvetica, sans-serif;
+    font-size: 0.9em;
+}
+
+#outer-wrapper {
+    margin: 0 auto;
+    text-align: left;
+    width: 750px;
+    background: #EEE;
+    border: 3px solid #DDD;
+    color: #444;
+}
+
+#logo h1, #logo h3 {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+
+#logo, #footer {
+    color: #FFF;
+    padding: 1em;
+    font-size: 1.1em;
+    border: 0 solid #DDD;
+}
+
+#header {
+    background: url(/images/background.png) top left no-repeat;
+    border: 0 solid #DDD;
+    border-width: 0 0 3px 0;
+}
+
+#logo h1 a {
+    display: block;
+    text-indent: -9999px;
+    overflow: hidden;
+    background: url(/images/logo.png) top left no-repeat;
+    height: 70px;
+}
+#logo h1 a:hover {
+    background-image: url(/images/logo-i.png);
+}
+
+#logo .contact-info {
+    float: right;
+}
+
+#footer {
+    background: #FFF;
+    color: #333;
+    margin: 0;
+    font-family: inherit;
+    font-size: 0.8em;
+    border-width: 3px 0 0 0;
+}
+
+
+#nav { 
+    padding: 0.5em;
+    text-align: left;
+}
+
+#nav ul, #nav li {
+    list-style-type: none;
+    margin: 0px;
+    margin-right: 0.5em;
+    padding: 0;
+}
+
+#nav li {
+    display: inline;
+}
+
+#nav a {
+    background: #000;
+    color: #FFF;
+    text-decoration: none;
+    padding: 0.5em 0.5em 0.5em 0.5em;
+    display: block; 
+    margin: 0.2em 0.2em 0.2em 0.8em; 
+    text-transform: uppercase;
+    font-weight: bold;
+    float: left;
+    letter-spacing: -1px;
+}
+#nav a.support, #nav a.support-first {
+    font-weight: normal;
+}
+#nav a.support-first {
+    margin-left: 2em;
+}
+
+#nav a:hover {
+    text-decoration: none;
+    color: #333;
+    background: #FFF;
+}
+
+#main h2 {
+    background: #FFF;
+    padding: 0.5em 1em;
+    margin-top: 2em;
+}
+#main h2.first {
+    margin-top: 1.5em;
+}
+#main .c {
+    padding: 0 1em;
+}
+#inner-wrapper {
+    line-height: 1.5em;
+}
+
+#inner-wrapper p {
+    padding: 0; 
+    margin: 1.5em 0;
+    font-size: 0.9em;
+}
+
+#inner-wrapper p.first {
+    margin-top: 0;
+}
+
+a {
+    color: #333;
+    background: #FFF;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    font-weight: bold;
+    padding: 0.4em 0.2em 0.2em;
+    letter-spacing: -1px;
+    text-decoration: none;
+}
+#main a {
+    border-bottom: 1px solid #333;
+}
+
+a:hover {
+    color: #666;
+    background: #FFF;
+}
+#main a:hover {
+    border-bottom: 1px solid #666;
+}
+
+.dashboard-icon {
+    height: 25px;
+    width: 25px;
+    float: right;
+}
+
+#main #clax {
+    background: #FFF url(/images/clax_small_icon.gif) 97% center no-repeat;
+}
+#main #bcdclock {
+    background: #FFF url(/images/bcd_clock_small_icon.gif) 97% center no-repeat;
+}
+#main #atack {
+    background: #FFF url(/images/atack-small-icon.gif) 97% center no-repeat;
+}
+
+.screenshot {
+    float: left;
+    padding: 0.5em; 
+    border: 1px solid #CCC;
+    background: #FFF;
+    height: 225px;
+    width: 150px;
+    margin: 0 10px;
+}
+
+.free {
+    color: #777;
+    padding: 0.2em; 
+    background: #FFFFAA;
+}
+h2 .free {
+    margin-left: 1em;
+}

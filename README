@@ -1,0 +1,14 @@
+== Weight Racer ==
+
+Features:
+
+- Weight Tracking
+- Ability to track individual meals (calorie content, fat content, protein, calories from fat)
+  * If food was eaten out, ability to enter name and meal and it'll do a quick search for the nutritional facts for the user
+- Ability to track any exercise completed during the day (type and duration or sets and reps)
+- Ability to set goals for any of the tracking items (ie 1800 calories a day)
+- Alerts for deadlines and upcoming events ("go outside and jog in place for 1 minute",  "mike pulled ahead of you in the competition")
+- Graphing of each tracked element with granular scoping abilities (flot)
+- Ability to attach yourself to a competition
+- Ability to create a public or private competition (private requires either a competition/pass combination or an invite and are hidden from searches)
+- Competitions show granular analysis of tracked data from it's members (ie check % bodyweight lost for all members, scoping to members if needed (mike vs matt))
