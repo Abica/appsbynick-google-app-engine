@@ -168,6 +168,10 @@ a:hover {
     background: #FFF url(/images/atack-small-icon.gif) 97% center no-repeat;
 }
 
+#main #flip-em-off {
+    background: #FFF url(/images/flip-em-off-icon.gif) 97% center no-repeat;
+}
+
 .screenshot {
     float: left;
     padding: 0.5em; 

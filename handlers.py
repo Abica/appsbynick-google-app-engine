@@ -29,6 +29,10 @@ class AtackHandler( ApplicationHandler ):
   def get( self ):
     self.render_template( "root/atack.html" )
 
+class FlipEmOffHandler( ApplicationHandler ):
+  def get( self ):
+    self.render_template( "root/flip_em_off.html" )
+
 class SupportHandler( ApplicationHandler ):
   def get( self ):
     self.render_template( "root/support.html" )
