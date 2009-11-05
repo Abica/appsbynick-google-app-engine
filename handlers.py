@@ -33,6 +33,10 @@ class FlipEmOffHandler( ApplicationHandler ):
   def get( self ):
     self.render_template( "root/flip_em_off.html" )
 
+class CellJumperHandler( ApplicationHandler ):
+  def get( self ):
+    self.render_template( "root/cell_jumper.html" )
+
 class SupportHandler( ApplicationHandler ):
   def get( self ):
     self.render_template( "root/support.html" )
