@@ -182,6 +182,14 @@ a:hover {
     margin: 0 10px;
 }
 
+.longer {
+    margin-bottom: 100px;
+}
+
+.longest {
+    margin-bottom: 200px;
+}
+
 .free {
     color: #777;
     padding: 0.2em; 
