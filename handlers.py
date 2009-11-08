@@ -37,6 +37,10 @@ class CellJumperHandler( ApplicationHandler ):
   def get( self ):
     self.render_template( "root/cell_jumper.html" )
 
+class BugSplatHandler( ApplicationHandler ):
+  def get( self ):
+    self.render_template( "root/bug_splat.html" )
+
 class SupportHandler( ApplicationHandler ):
   def get( self ):
     self.render_template( "root/support.html" )
