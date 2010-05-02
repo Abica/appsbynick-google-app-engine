@@ -136,7 +136,7 @@ a {
     color: #333;
     background: #FFF;
     text-transform: uppercase;
-    font-size: 0.9em;
+    font-size: 0.8em;
     font-weight: bold;
     padding: 0.4em 0.2em 0.2em;
     letter-spacing: -1px;
@@ -144,7 +144,14 @@ a {
 }
 #main a {
     border-bottom: 1px solid #333;
+    font-size: 1.5em;
 }
+
+a.small-link {
+    font-size: 1.0em !important;
+}
+
+
 
 a:hover {
     color: #666;
@@ -162,6 +169,10 @@ a:hover {
 
 #main #clax {
     background: #FFF url(/images/clax.gif) 97% center no-repeat;
+}
+
+#main #claxhd {
+    background: #FFF url(/images/claxhd.png) 97% center no-repeat;
 }
 #main #bcdclock {
     background: #FFF url(/images/bcdclock.gif) 97% center no-repeat;
