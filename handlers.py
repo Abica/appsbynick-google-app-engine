@@ -25,6 +25,10 @@ class ClaxHandler( ApplicationHandler ):
   def get( self ):
     self.render_template( "root/clax.html" )
 
+class ClaxHDHandler( ApplicationHandler ):
+  def get( self ):
+    self.render_template( "root/claxhd.html" )
+
 class AtackHandler( ApplicationHandler ):
   def get( self ):
     self.render_template( "root/atack.html" )
