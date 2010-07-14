@@ -1,9 +1,10 @@
 from google.appengine.ext import webapp
 from google.appengine.ext.webapp.util import run_wsgi_app
-from handlers import RootHandler, BcdClockHandler, ClaxHandler, ClaxHDHandler, AtackHandler, FlipEmOffHandler, CellJumperHandler, BugSplatHandler, SupportHandler
+from handlers import RootHandler, MatchimalsHandler, BcdClockHandler, ClaxHandler, ClaxHDHandler, AtackHandler, FlipEmOffHandler, CellJumperHandler, BugSplatHandler, SupportHandler
 
 application = webapp.WSGIApplication( [
     ( '/', RootHandler ),
+    ( '/matchimals', MatchimalsHandler ),
     ( '/bcdclock', BcdClockHandler ),
     ( '/clax', ClaxHandler ),
     ( '/claxhd', ClaxHDHandler ),
