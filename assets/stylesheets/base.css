@@ -175,6 +175,10 @@ a:hover {
     background: #FFF url(/images/claxhd.png) 97% center no-repeat;
 }
 
+#main #pandadrop {
+    background: #FFF url(/images/pandadrop_small_icon.png) 97% center no-repeat;
+}
+
 #main #matchimals {
     background: #FFF url(/images/matchimals_small_icon.png) 97% center no-repeat;
 }

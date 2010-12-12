@@ -17,6 +17,10 @@ class RootHandler( ApplicationHandler ):
   def get( self ):
     self.render_template( "root/index.html" )
 
+class PandaDropHandler( ApplicationHandler ):
+  def get( self ):
+    self.render_template( "root/pandadrop.html" )
+
 class MatchimalsHandler( ApplicationHandler ):
   def get( self ):
     self.render_template( "root/matchimals.html" )
